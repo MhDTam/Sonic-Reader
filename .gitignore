@@ -1,0 +1,23 @@
+# Public repository: documentation and reviewed artwork only.
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.properties
+.env*
+*.log
+*.tar
+*.zip
+*.dart
+*.gs
+*.kt
+*.java
+*.gradle*
+lib/
+android/
+ios/
+build/
+private/
+.scratch/

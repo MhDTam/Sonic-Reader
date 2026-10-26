@@ -1,0 +1,41 @@
+name: Bug report / الإبلاغ عن مشكلة
+description: Help reproduce a problem using a non-private sample / وصف مشكلة بمثال غير شخصي
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Please do not attach private documents, passwords, access tokens or personal account details. / لا ترفق مستندات خاصة أو كلمات مرور أو رموز وصول أو معلومات حسابات شخصية."
+  - type: input
+    id: build
+    attributes:
+      label: App version and build / إصدار التطبيق ورقم البناء
+      placeholder: "1.0.0 / 16131"
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version / إصدار Android
+      placeholder: "Android 16"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and observed result / الخطوات والنتيجة الفعلية
+      description: Explain how to reproduce the problem with a synthetic document.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result / النتيجة المتوقعة
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Attachment privacy / خصوصية المرفقات
+      options:
+        - label: My attachments contain no private documents, credentials or personal information. / مرفقاتي خالية من المستندات الخاصة وبيانات الاعتماد والمعلومات الشخصية.
+          required: true

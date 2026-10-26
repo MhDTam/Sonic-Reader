@@ -1,0 +1,19 @@
+name: Feature or translation suggestion / اقتراح ميزة أو تصحيح ترجمة
+description: Suggest an improvement to the app / اقترح تحسينًا للتطبيق
+title: "[Suggestion]: "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would improve your workflow? / ما الذي يحسّن استخدامك؟
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested behavior or wording / السلوك أو النص المقترح
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "This is a downloads and documentation repository; application source code is private. Do not include personal data. / هذا مستودع للتنزيل والتوثيق؛ كود التطبيق خاص. لا تدرج معلومات شخصية."
